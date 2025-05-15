@@ -14,8 +14,8 @@
     <nav class="nav">
         <ul class="nav-ul">
             <li><a href="#" id="about-trigger">AboutMe</a></li>
-            <li><a href="Projects.html">Project</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#project">Project</a></li>
+            <!--<li><a href="#">Contact</a></li>-->
         </ul>
     </nav>
   </header>
@@ -63,33 +63,101 @@
     </div>
     </aside>
   <!-- sub Project Section -->
-  <section class="project">
+  <section class="project" id="project">
     <h2>Project Summary</h2>
-  <div class="card-container">
-    <div class="card">
-      <img src="https://via.placeholder.com/400x250" alt="画像1">
-      <div class="card-content">
-        <h3>カードタイトル1</h3>
-        <p>カードの説明文がここに入ります。</p>
-      </div>
-    </div>
-    <div class="card">
-      <img src="https://via.placeholder.com/400x250" alt="画像2">
-      <div class="card-content">
-        <h3>カードタイトル2</h3>
-        <p>別の説明文もこのように表示できます。</p>
-      </div>
-    </div>
-    <div class="card">
-      <img src="https://via.placeholder.com/400x250" alt="画像3">
-      <div class="card-content">
-        <h3>カードタイトル3</h3>
-        <p>複数のカードを均等に並べられます。</p>
-      </div>
-    </div>
-    </div>
-  </section>
+    <div class="scroll-wrapper">
+  <button class="scroll-btn left" onclick="scrollCards(-1)">&#10094;</button>
 
+  <div class="card-container" id="cardContainer">
+    <a href="#project1">
+    <div class="card">
+      <img src="image/ThunmbnailJane.png" alt="画像1">
+      <div class="card-content">
+        <h3>Pythonジェネレータ</h3>
+        <p>WEB/Python</p>
+      </div>
+    </div>
+    </a>
+    <a href="#project2">
+    <div class="card">
+      <img src="image/ThunmbnailTodo.png" alt="画像2">
+      <div class="card-content">
+        <h3>デスクトップアプリの制作</h3>
+        <p>C#/ZAML</p>
+      </div>
+    </div>
+    </a>
+    <a href="#project3">
+    <div class="card">
+      <img src="image/ThunmbnailMairo.png" alt="画像3">
+      <div class="card-content">
+        <h3>PythonAI</h3>
+        <p>Python</p>
+      </div>
+    </div>
+    </a>
+    <a href="#project4">
+    <div class="card">
+      <img src="image/ThunmbnailGP.png" alt="画像4">
+      <div class="card-content">
+        <h3>その他 グループ活動</h3>
+        <p></p>
+      </div>
+    </div>
+    </a>
+    </div>
+     <button class="scroll-btn right" onclick="scrollCards(1)">&#10095;</button>
+    </div>
+    <section id="project1" class="project-detail">
+  <h2>Pythonジェネレータ</h2>
+  <p>Pythonを活用したWEB診断ジェネレータツールのプロジェクトです。雛形としてシンプルな診断ツールを作成しています。これをさらに運用すれば、ECサイトのユーザーパーソナライズに活用できます。</p>
+  <div class="responsive-slide">
+    <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQS82R2fvo6Qs0Y2pHHFOOX0vp9MQHgYV8pojFWvZOZGbVUuQdF5yiHcTFbw3JOg_zYg3v-5mkAn-f8/pubembed?start=false&loop=true&delayms=5000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+  </div>
+  <p></p>
+</section>
+
+<section id="project2" class="project-detail">
+  <h2>デスクトップアプリ</h2>
+  <p>C#とXAMLを使ったデスクトップアプリ開発です。実行環境はAppleM3。実行環境が合えばですが.zipファイルで配布も可能なアプリとして設計しました。シンプルな基本のTodoですが、データバインドなども含め、様々な技能が求められるプロダクトです。</p>
+  
+  <div class="responsive-slide">
+    <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQgN8rROoy0ZjrN_KFOits0_EWn8aNmLqQQe4w5zzlWpdU53JSgbrQtluTGTKto1d0UzDUwQNt7tyh_/pubembed?start=false&loop=true&delayms=5000"
+      frameborder="0" allowfullscreen></iframe>
+  </div>
+
+  <p>スライドには主要な機能や設計コンセプトをコード解説とともに載せています。</p>
+</section>
+
+<section id="project3" class="project-detail">
+  <h2>PythonAI</h2>
+  <p>Pythonだけで実装したAI迷路探索。機械学習アルゴリズムの学習と実験に焦点を当てて作成しました。</p>
+  <div class="responsive-slide">
+  <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vSw-Q7baVWcNjvphq-ZwsE3x6B_PTIUvfnAzVVpp_tRniiTGjobRuvRW1Mc0nCs67exkRfMhlhIwgQ8/pubembed?start=false&loop=true&delayms=5000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+  </div>
+  <p>python3でターミナル実行すれば遊べます。</p>
+  <a href="https://drive.google.com/file/d/1eMJmMw_jTxzkNblpo9CiS5loGPo8AG_9/view?usp=sharing"><p>グーグルドライブからダウンロード</p></a>
+</section>
+
+<section id="project4" class="project-detail">
+  <h2>活動</h2>
+  <p>大学所属時に1年間プロジェクト活動として複数人でグループ活動を行いました。</p>
+  <p>Unityを使用したゲームアプリ(WEB)の開発です</p>
+  <div class="image-row">
+    <img src="image/proj1.png" alt="スライド1">
+    <img src="image/proj2.png" alt="スライド2">
+    <img src="image/proj3.png" alt="スライド3">
+    <img src="image/proj4.png" alt="スライド3">
+  </div>
+  
+</section>
+  </section>
+  <footer class="site-footer">
+  <div class="footer-content">
+    <p>&copy; 2025 MizunaAbe</p>
+    <p class="footer-note">お問い合わせ: mizuna_abe@outlook.com</p>
+  </div>
+</footer>
   <script src="style.js"></script>
 </body>
 </html>
